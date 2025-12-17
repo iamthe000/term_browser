@@ -26,8 +26,7 @@ def pixels_to_ansi(image):
 
 def fetch_page(url, is_search=False):
     term_width, term_height = get_terminal_size()
-    headers = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"}
-    
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Language": "ja,en-US;q=0.9,en;q=0.8"}
     elements = [] # リンクと入力ボックスを統合して管理
     
     try:
